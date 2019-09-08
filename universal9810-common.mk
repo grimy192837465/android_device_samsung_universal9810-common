@@ -103,8 +103,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/sec_touchscreen.kl:system/usr/keylayout/sec_touchscreen.kl
 
 # Fix QuickSwitch (apparently)
-# PRODUCT_ENFORCE_RRO_TARGETS := \
-#     framework-res
+PRODUCT_ENFORCE_RRO_TARGETS := \
+    framework-res
 
 # Property overrides
 -include $(LOCAL_PATH)/system_prop.mk
