@@ -29,6 +29,11 @@ TARGET_2ND_CPU_VARIANT := cortex-a53
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
 
+# Kernel Toolchain
+# - Default toolchain has some compatibility problems with Exynos Kernel.
+KERNEL_TOOLCHAIN_PREFIX := aarch64-linux-gnu-
+KERNEL_TOOLCHAIN := prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-7.0/bin
+
 # Image
 BOARD_CUSTOM_BOOTIMG_MK := hardware/samsung/mkbootimg.mk
 BOARD_KERNEL_IMAGE_NAME := Image
